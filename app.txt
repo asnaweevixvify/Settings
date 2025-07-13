@@ -1,34 +1,9 @@
 npm create vite@latest client -- --template react
 npm init -y
-npx create-next-app next-test
-
-npm install react-router-dom
-npm install axios
-npm install react-switch
-install tailwindcss @tailwindcss/vite
-npm install firebase
-npm install nodemon
-npm install multer
-npm install cookie-parser
-npm install express-session
-
--express 
--mongoose
--env
--jwt กำหนดความปลอดภัยให้ api
--cors ให้ react กับ node ที่ port ต่างกันทำงานกันได้
--nodemon
--slugify กำหนด url
--expressjwt ตรวจสอบ jwt
--morgan เก็บ log จาก http req
-
-ติดตั้งพร้อมกัน npm install express mongoose jsonwebtoken cors nodemon dotenv slugify express-jwt morgan
+npm install react-router-dom axios sweetalert2
+npm install express mongoose jsonwebtoken cors nodemon dotenv slugify express-jwt morgan multer cookie-parser express-session
 
 "start": "nodemon server.js"
-
-npx nodemon index.js
-npm install express
-npm install mongoose
 
 import { BrowserRouter as Router,Route,Link,Routes } from 'react-router-dom'
 
@@ -45,7 +20,27 @@ body{
 }
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+
+
+npx create-next-app next-test
+
+npm install react-switch
+install tailwindcss @tailwindcss/vite
+npm install firebase
+
+-express 
+-mongoose
+-env
+-jwt กำหนดความปลอดภัยให้ api
+-cors ให้ react กับ node ที่ port ต่างกันทำงานกันได้
+-nodemon
+-slugify กำหนด url
+-expressjwt ตรวจสอบ jwt
+-morgan เก็บ log จาก http req
+
+npx nodemon index.js
 
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
