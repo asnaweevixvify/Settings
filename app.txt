@@ -1,7 +1,7 @@
 npm create vite@latest client -- --template react
 npm init -y
 npm install react-router-dom axios sweetalert2
-npm install express mongoose jsonwebtoken cors nodemon dotenv slugify express-jwt morgan multer cookie-parser express-session
+npm install express mongoose jsonwebtoken cors nodemon dotenv slugify express-jwt morgan multer cookie-parser express-session bcrypt
 
 "start": "nodemon server.js"
 
